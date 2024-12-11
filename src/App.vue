@@ -3,7 +3,7 @@ import LayoutHeader from './components/LayoutHeader.vue'
 </script>
 
 <template>
-  <div>
+  <div :class="$style.app">
     <layout-header />
     <main>
       <router-view v-slot="{ Component, route }">
@@ -22,6 +22,7 @@ import LayoutHeader from './components/LayoutHeader.vue'
 
 <style lang="scss" module>
 .app {
-  
+  width: 100vw;
+  height: 100vh;
 }
 </style>

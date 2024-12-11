@@ -10,7 +10,9 @@ const props = defineProps({
   },
   required: Boolean,
   inputId: [String, Number],
-  placeholder: [String, Number]
+  placeholder: [String, Number],
+  large: Boolean,
+  small: Boolean,
 })
 </script>
 
@@ -23,6 +25,7 @@ const props = defineProps({
       :inputId="inputId"
     />
     <input
+      :class="$style['app-input']"
       :type="type"
       :value="value"
       :id="inputId"
@@ -34,4 +37,11 @@ const props = defineProps({
 </template>
 
 <style lang="scss" module>
+.app-input {
+  --input-height: 32px;
+
+  height: var(--input-height);
+  border-radius: 5px;
+  border: 1px solid #727272;
+}
 </style>

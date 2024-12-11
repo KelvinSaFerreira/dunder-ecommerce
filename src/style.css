@@ -24,7 +24,7 @@ a:hover {
 
 body {
   margin: 0;
-  min-width: 320px;
+  min-width: 100vw;
   min-height: 100vh;
   background-color: #fff;
   color: #242424;
@@ -61,12 +61,6 @@ button:focus-visible {
   padding: 2em;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
 
 @media (prefers-color-scheme: light) {
   :root {
